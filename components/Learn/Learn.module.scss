@@ -1,0 +1,29 @@
+﻿.container {
+  width: 70%;
+  margin: 0 auto;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+    }
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.5;
+    }
+  }
+}

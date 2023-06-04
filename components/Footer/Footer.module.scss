@@ -1,0 +1,191 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+    }
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.5;
+    }
+    form {
+      display: flex;
+      input {
+        border: none;
+        outline: none;
+        color: white;
+        padding: 0 0 0 20px;
+        position: relative;
+        background: rgb(255, 255, 255, 0.4);
+        border-radius: 50px 0px 0px 50px;
+        width: 353px;
+        height: 44px;
+        padding-right: 25px;
+      }
+      button {
+        outline: none;
+        cursor: pointer;
+        z-index: 1;
+        margin-left: -20px;
+        color: white;
+        border: none;
+        background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+        border-radius: 50px;
+        width: 160px;
+        height: 44px;
+      }
+      button:hover {
+        background: linear-gradient(94.78deg, #e8392c 11.19%, #5d055f 93.72%);
+        transition: 1s;
+      }
+    }
+    .errors {
+      color: red;
+      margin-top: -30px;
+    }
+    .soc_icons {
+      display: flex;
+      gap: 10%;
+      .soc {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 50px;
+        border-radius: 50%;
+        transition: 0.3s;
+        background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+        cursor: pointer;
+        a {
+          img {
+            display: flex;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      .soc:hover {
+        background: linear-gradient(94.26deg, #7429cb 9.51%, #341add 90.23%);
+      }
+    }
+    h2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    .content {
+      h1 {
+        font-size: 38px;
+      }
+      p {
+        font-size: 14px;
+      }
+      form {
+        input {
+          width: 283px;
+          height: 44px;
+        }
+        button {
+          width: 120px;
+          height: 44px;
+        }
+      }
+      .soc_icons {
+        .soc {
+          width: 60px;
+          height: 40px;
+
+          a {
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+      h2 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    .content {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 13px;
+      }
+      form {
+        input {
+          width: 253px;
+          height: 44px;
+        }
+        button {
+          font-size: 12px;
+          width: 100px;
+          height: 44px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    .content {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 12px;
+      }
+      form {
+        input {
+          width: 223px;
+          height: 44px;
+        }
+        button {
+          font-size: 11px;
+          width: 95px;
+          height: 44px;
+        }
+      }
+    }
+  }
+}
